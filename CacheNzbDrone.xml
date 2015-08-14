@@ -5,7 +5,7 @@
 [b][span style='color: #E80000;']Directions:[/span][/b][br]&#13;
 [b]/config[/b] : set this path to where you wish NzbDrone to store it's configuration.[br]&#13;
 [b]/downloads[/b] : this path is used retrieve the downloaded files by your downloader application (e.g. SABnzbd or NZBGet)[br]&#13;
-[b]/tv[/b] : set this path to where you wish NzbDrone move your TV episodes to.&#13;[br] Edited from sparklyballs for my config with no cache drive<
+[b]/tv[/b] : set this path to where you wish NzbDrone move your TV episodes to.&#13;[br] Edited from needo for my config with no cache drive<
 </Description>
   <Registry>https://registry.hub.docker.com/u/needo/nzbdrone/</Registry>
   <Repository>needo/nzbdrone</Repository>

@@ -4,7 +4,7 @@
   <Description>The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It\'s easy to use, it\'s awesome, and it\'s free![br][br]&#13;
 [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]&#13;
 [b]/config[/b] : this is where PMS will store it\'s databases and configuration.[br][br]&#13;
-[b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.&#13;[br] Edited from sparklyballs for my config with no cache drive<
+[b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.&#13;[br] Edited from needo for my config with no cache drive<
 </Description>
   <Registry>https://registry.hub.docker.com/u/needo/plex/</Registry>
   <Repository>needo/plex</Repository>

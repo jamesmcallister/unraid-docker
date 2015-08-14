@@ -6,7 +6,7 @@
 [b]/config[/b] : this path is used to store the configuration and the database files of Couchpotato.[br]&#13;
 [b]/downloads[/b] : this path is used retrieve the downloaded files by your downloader application (e.g. SABnzbd or NZBGet)[br]&#13;
 [b]/movies[/b] : set this path to where you wish Couchpotato move your movies to.[br][br]&#13;
-[b]Tip:[/b] Set EDGE variable to \'1\' if you want to always run the last version.&#13;[br] Edited from sparklyballs for my config with no cache drive<
+[b]Tip:[/b] Set EDGE variable to \'1\' if you want to always run the last version.&#13;[br] Edited from needo for my config with no cache drive<
 </Description>
   <Registry>https://registry.hub.docker.com/u/needo/couchpotato/</Registry>
   <Repository>needo/couchpotato</Repository>
