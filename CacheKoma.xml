@@ -4,7 +4,7 @@
   <Description>Integrated kodi-headless and mariadb container[br]&#13;
 To use [br]fill in the folder mappings and port settings below [br] 3306 is mariadb port[br]start the container[br] let it run for a couple of minutes[br] &#13;
 and then stop it[br] go to unraid terminal and issue this command[br]&#13;
-docker exec Koma createuser kodi kodi [br] start container [br] Edited from sparklyballs for my config with no cache drive[br] Edited from sparklyballs for my config with no cache drive<</Description>
+docker exec Koma createuser kodi kodi [br] start container [br] Edited from sparklyballs for my config with no cache drive[br] Edited from sparklyballs for my config with no cache drive</Description>
   <Registry>https://registry.hub.docker.com/u/sparklyballs/koma/</Registry>
   <Repository>sparklyballs/koma</Repository>
   <BindTime>true</BindTime>
