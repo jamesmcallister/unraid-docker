@@ -1,7 +1,7 @@
 ```
 telnet 10.0.0.10
 cd /boot/config/plugins/dockerMan/templates
-git clone git@github.com:jamesmcallister/unraid-docker.git unraid-docker
+git https://github.com/jamesmcallister/unraid-docker.git unraid-docker
 cd unraid-docker
 rm -rf .git
 ```
