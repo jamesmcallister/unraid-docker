@@ -1,0 +1,37 @@
+<keymap>
+<global><!-- New default keys -->
+    <remote>
+        <Red>ToggleWatched</Red> <!-- Marks the watched status of an item -->
+        <Green>SendClick(25,14)</Green><!-- And Green will toggle the library views between 'show everything' and 'show watched only' -->
+        <Yellow>XBMC.UpdateLibrary(video)</Yellow><!-- Updates the library -->
+        <Blue>FullScreen</Blue> <!-- Toggles fullscreen view handy to hide menus while playing video -->
+        <record>XBMC.Action(reloadkeymaps)</record> <!-- Reloads this file with out rebooting xbmc -->
+    </remote>
+</global>
+
+<!-- On the home screen, 1 cleans the library, 2 triggers an update -->
+<home>
+    <remote>
+       <one>XBMC.CleanLibrary(video)</one>
+       <two>XBMC.UpdateLibrary(video)</two>
+    </remote>
+</home>
+
+<!-- Only work while playing videos -->
+
+<FullscreenVideo>
+    <remote>
+        <Red>AudioNextLanguage</Red>
+        <Green>ShowSubtitles</Green>
+        <Yellow>AudioDelayMinus</Yellow>
+        <Blue>AudioDelayPlus</Blue>
+        <Back>Back</Back>
+    </remote>
+</FullscreenVideo>
+
+  <movieinformation>
+    <remote>
+      <info>Close</info>
+    </remote>
+  </movieinformation>
+</keymap>

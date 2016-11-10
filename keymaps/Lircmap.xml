@@ -1,0 +1,33 @@
+<!-- harmony ultimate -->
+<lircmap>
+        <remote device="mceusb">
+                <play>Play</play>
+                <pause>Pause</pause>
+                <stop>Stop</stop>
+                <forward>Forward</forward>
+                <reverse>Rewind</reverse>
+                <record>Record</record>
+
+                <exit>KEY_EXIT</exit>
+                <menu>DVD</menu>
+
+                <left>Left</left>
+                <right>Right</right>
+                <up>Up</up>
+                <down>Down</down>
+                <select>OK</select>
+                <pageplus>ChanUp</pageplus>
+                <pageminus>ChanDown</pageminus>
+                <mute>Mute</mute>
+                <back>Back</back>
+
+                <pvr>KEY_PVR</pvr>
+                <guide>KEY_EPG</guide>
+                <info>KEY_INFO</info>
+
+                <red>Red</red>
+                <green>Green</green>
+                <yellow>Yellow</yellow>
+                <blue>Blue</blue>
+        </remote>
+</lircmap>
