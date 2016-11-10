@@ -8,8 +8,8 @@
 [b]/movies[/b] : set this path to where you wish Couchpotato move your movies to.[br][br]&#13;
 [b]Tip:[/b] Set EDGE variable to \'1\' if you want to always run the last version.&#13;[br] Edited from needo for my config with no cache drive
 </Description>
-  <Registry>https://registry.hub.docker.com/u/needo/couchpotato/</Registry>
-  <Repository>needo/couchpotato</Repository>
+  <Registry>https://registry.hub.docker.com/u/linuxserver/couchpotato/</Registry>
+  <Repository>linuxserver/couchpotato</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -35,7 +35,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/docker/completed</HostDir>
+      <HostDir>/mnt/cache/docker/completed/movies</HostDir>
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

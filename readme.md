@@ -13,3 +13,11 @@ To install this plugin, paste the following URL into the Plugins / Install PlugI
 ```
 https://raw.githubusercontent.com/Squidly271/community.applications/master/plugins/community.applications.plg
 ```
+
+
+Get into the MariaDB command line utility: `mysql -u root -p`
+
+Type in: `CREATE USER 'kodi' IDENTIFIED BY 'kodi';`
+Type in: `GRANT ALL ON *.* TO 'kodi';`
+Type in: `flush privileges;`
+Close out the command line tool with`\q`

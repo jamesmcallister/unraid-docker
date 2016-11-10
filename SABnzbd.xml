@@ -6,8 +6,8 @@
 [b]/config[/b] : this path is where SABnzbd store it\'s configuration.[br]&#13;
 [b]/downloads[/b] : in this path, SABnzbd stores the downloaded files.&#13;[br] Edited from needo for my config with no cache drive
 </Description>
-  <Registry>https://registry.hub.docker.com/u/needo/sabnzbd/</Registry>
-  <Repository>needo/sabnzbd</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/sabnzbd/</Registry>
+  <Repository>linuxserver/sabnzbd</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -30,6 +30,11 @@
     <Volume>
       <HostDir>/mnt/cache/docker/completed</HostDir>
       <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/docker/incomplete</HostDir>
+      <ContainerDir>/incomplete-downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>

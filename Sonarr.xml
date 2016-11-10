@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>NzbDrone</Name>
-  <Description>NZBDrone is a PVR for newsgroup users. It can monitor multiple RSS feeds for new episodes of your favourite shows and will grab, sorts and renames them. It can also be configured to automatically upgrade the quality of files already downloaded if a better quality format becomes available.[br][br]&#13;
+  <Name>Sonarr</Name>
+  <Description>Sonarr is a PVR for newsgroup users. It can monitor multiple RSS feeds for new episodes of your favourite shows and will grab, sorts and renames them. It can also be configured to automatically upgrade the quality of files already downloaded if a better quality format becomes available.[br][br]&#13;
 [b][span style='color: #E80000;']Directions:[/span][/b][br]&#13;
 [b]/config[/b] : set this path to where you wish NzbDrone to store it's configuration.[br]&#13;
 [b]/downloads[/b] : this path is used retrieve the downloaded files by your downloader application (e.g. SABnzbd or NZBGet)[br]&#13;
 [b]/tv[/b] : set this path to where you wish NzbDrone move your TV episodes to.&#13;[br] Edited from needo for my config with no cache drive
 </Description>
-  <Registry>https://registry.hub.docker.com/u/needo/nzbdrone/</Registry>
-  <Repository>needo/nzbdrone</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/sonarr/</Registry>
+  <Repository>linuxserver/sonarr</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -24,12 +24,17 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/docker/appdata/NzbDrone/</HostDir>
+      <HostDir>/dev/rtc</HostDir>
+      <ContainerDir>/dev/rtc</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/docker/appdata/sonarr</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/docker/completed/tv/</HostDir>
+      <HostDir>/mnt/cache/docker/completed/tv</HostDir>
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

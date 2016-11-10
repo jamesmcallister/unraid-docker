@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kodi-headless</Name>
+  <Repository>linuxserver/kodi-headless</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/kodi-headless/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=42439</Support>
+  <Overview>Kodi&#x2122; (formerly known as XBMC&#x2122;) is an award-winning free and open source (GPL) software media center for playing videos, music, pictures, games, and more.&#xD;
+  [br]Headless installation to enable library updates[br]&#xD;
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+  [b]/config[/b] Where kodi-headless should store settings, log and configuration files[br]&#xD;
+  [b]tags[/b] Adding a tag in the form :Krypton (for example only),&#xD;
+  allows you to specify kodi main version[br]See git README https://github.com/linuxserver/docker-kodi-headless#tags[br] for current supported tags&#xD;
+&#xD;
+  </Overview>
+  <Category>MediaServer:Video</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kodi-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1478786005</DateInstalled>
+  <Description>Kodi&#x2122; (formerly known as XBMC&#x2122;) is an award-winning free and open source (GPL) software media center for playing videos, music, pictures, games, and more.&#xD;
+  [br]Headless installation to enable library updates[br]&#xD;
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+  [b]/config[/b] Where kodi-headless should store settings, log and configuration files[br]&#xD;
+  [b]tags[/b] Adding a tag in the form :Krypton (for example only),&#xD;
+  allows you to specify kodi main version[br]See git README https://github.com/linuxserver/docker-kodi-headless#tags[br] for current supported tags&#xD;
+&#xD;
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8088</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9777</HostPort>
+        <ContainerPort>9777</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/docker/appdata/kodi-headless</HostDir>
+      <ContainerDir>/config/.kodi</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8088</Config>
+  <Config Name="Host Port 2" Target="9777" Default="9777" Mode="udp" Description="Container Port: 9777" Type="Port" Display="always" Required="true" Mask="false">9777</Config>
+  <Config Name="Host Path 1" Target="/config/.kodi" Default="" Mode="rw" Description="Container Path: /config/.kodi" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/appdata/kodi-headless</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>
