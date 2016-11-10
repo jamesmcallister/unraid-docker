@@ -1,18 +1,18 @@
-```
+`
 telnet 10.0.0.10
 cd /boot/config/plugins/dockerMan/templates
 git https://github.com/jamesmcallister/unraid-docker.git unraid-docker
 cd unraid-docker
 rm -rf .git
-```
+`
 
 or
 
 To install this plugin, paste the following URL into the Plugins / Install PlugIn section:
 
-```
+`
 https://raw.githubusercontent.com/Squidly271/community.applications/master/plugins/community.applications.plg
-```
+`
 
 
 Get into the MariaDB command line utility: `mysql -u root -p`
@@ -24,3 +24,11 @@ Type in: `GRANT ALL ON *.* TO 'kodi';`
 Type in: `flush privileges;`
 
 Close out the command line tool with`\q`
+
+http://kodi.wiki/view/HOW-TO:Update_Paths_In_MySQL
+
+export data - backup
+`mysqldump --user xbmc -p --all-databases > xbmc-backup.sql`
+
+import data
+`mysql -u xbmc -p < xbmc-backup-new.sql`
